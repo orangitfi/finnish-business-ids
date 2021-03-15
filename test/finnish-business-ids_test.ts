@@ -1,4 +1,5 @@
 import { expect } from 'chai'
+
 import { FinnishBusinessIds } from '../src/finnish-business-ids'
 
 describe('finnish-business-ids', () => {

@@ -18,3 +18,5 @@ reports/
 debug/
 
 node_modules/
+/.jshintrc
+/.jshintignore

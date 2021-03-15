@@ -1,8 +1,6 @@
 Finnish business id and vat number validator/generator
 ======================================================
 
-[![Build Status](https://travis-ci.org/vkomulai/finnish-business-ids.svg?branch=master)](https://travis-ci.org/vkomulai/finnish-business-ids) ![0 deps](https://david-dm.org/vkomulai/finnish-business-ids.svg) ![Downloads](https://img.shields.io/npm/dt/finnish-business-ids.svg) ![License](https://img.shields.io/npm/l/finnish-business-ids.svg)
-
 - A micro library for validating and creating Finnish business ids (y-tunnus, alv-numero)
 - Lightweight, less than 10kb
 - No dependencies
@@ -15,7 +13,7 @@ Installation
 # NPM
 npm install finnish-business-ids --save
 
-# yarn 
+# yarn
 yarn add finnish-business-ids
 ```
 
@@ -91,7 +89,7 @@ Release a new version
 ---------------------
 
 - `npm run dist`
-- Update version number in `package.json`. Follow [semantic versioning](https://docs.npmjs.com/getting-started/semantic-versioning) 
+- Update version number in `package.json`. Follow [semantic versioning](https://docs.npmjs.com/getting-started/semantic-versioning)
 - `npm publish`
 
 

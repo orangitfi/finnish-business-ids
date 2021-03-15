@@ -59,7 +59,6 @@
   "exclude": [
     ".idea",
     "dist",
-    "test",
     "node_modules",
     "examples"
   ]

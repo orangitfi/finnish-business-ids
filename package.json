@@ -1,18 +1,19 @@
 {
   "name": "finnish-business-ids",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "main": "./dist/finnish-business-ids.js",
   "types": "dist/finnish-business-ids.d.ts",
   "description": "A micro Javascript library for validating and creating Finnish business ids (Y-tunnus, alv-numero)",
   "scripts": {
     "dist": "tsc && uglifyjs dist/finnish-business-ids.js > dist/finnish-business-ids.min.js",
-    "lint": "tslint src/*.ts test/*.ts",
+    "lint": "eslint -c .eslintrc.js --ext .ts src test",
     "test": "mocha -r ts-node/register test/finnish-business-ids_test.ts",
-    "test-watch": "mocha --watch-extensions ts --watch -r ts-node/register test/finnish-business-ids_test.ts"
+    "test-watch": "mocha --watch-extensions ts --watch -r ts-node/register test/finnish-business-ids_test.ts",
+    "validate": "npm ls"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vkomulai/finnish-business-ids.git"
+    "url": "https://github.com/orangitfi/finnish-business-ids.git"
   },
   "keywords": [
     "Finnish",
@@ -24,25 +25,37 @@
   ],
   "author": "vkomulai <ville.komulainen@iki.fi>",
   "contributors": [
-    "pihvi <pihvi@live.com>"
+    "pihvi <pihvi@live.com>",
+    "Orangit"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vkomulai/finnish-business-ids/issues"
+    "url": "https://github.com/orangitfi/finnish-business-ids/issues"
   },
-  "homepage": "https://github.com/vkomulai/finnish-business-ids",
+  "homepage": "https://github.com/orangitfi/finnish-business-ids",
   "devDependencies": {
-    "@types/chai": "^4.1.4",
-    "@types/mocha": "^5.2.5",
-    "chai": "^4.1.2",
-    "mocha": "5.2.0",
-    "precommit-hook": "^3.0.0",
-    "ts-node": "7.0.0",
-    "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.14.0",
-    "tslint-config-strict": "^1.12.0",
-    "typescript": "^3.0.1",
-    "uglify-js": "^3.4.5"
+    "@types/chai": "4.2.15",
+    "@types/mocha": "8.2.1",
+    "@typescript-eslint/eslint-plugin": "4.17.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.17.0",
+    "@typescript-eslint/parser": "4.17.0",
+    "chai": "4.3.4",
+    "eslint": "7.22.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "32.3.0",
+    "eslint-plugin-no-null": "1.0.2",
+    "eslint-plugin-prefer-arrow": "1.2.3",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-unicorn": "28.0.2",
+    "mocha": "8.3.2",
+    "precommit-hook": "3.0.0",
+    "ts-node": "9.1.1",
+    "tslint": "6.1.3",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-strict": "1.12.0",
+    "typescript": "4.2.3",
+    "uglify-js": "3.13.1"
   },
   "pre-commit": [
     "lint",
