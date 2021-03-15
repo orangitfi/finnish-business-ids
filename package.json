@@ -5,12 +5,12 @@
   "types": "dist/finnish-business-ids.d.ts",
   "description": "A micro Javascript library for validating and creating Finnish business ids (Y-tunnus, alv-numero)",
   "scripts": {
-    "dist": "tsc && uglifyjs dist/src/finnish-business-ids.js > dist/finnish-business-ids.min.js",
+    "dist": "tsc && uglifyjs dist/src/finnish-business-ids.js > dist/finnish-business-ids.js",
     "lint": "eslint -c .eslintrc.js --ext .ts src test",
     "test": "mocha -r ts-node/register test/finnish-business-ids_test.ts",
     "test-watch": "mocha --watch-extensions ts --watch -r ts-node/register test/finnish-business-ids_test.ts",
     "validate": "npm ls",
-    "prepare": "tsc && uglifyjs dist/src/finnish-business-ids.js > dist/finnish-business-ids.min.js"
+    "prepare": "tsc && uglifyjs dist/src/finnish-business-ids.js > dist/finnish-business-ids.js"
   },
   "repository": {
     "type": "git",
