@@ -9,7 +9,8 @@
     "lint": "eslint -c .eslintrc.js --ext .ts src test",
     "test": "mocha -r ts-node/register test/finnish-business-ids_test.ts",
     "test-watch": "mocha --watch-extensions ts --watch -r ts-node/register test/finnish-business-ids_test.ts",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "prepare": "tsc && uglifyjs dist/finnish-business-ids.js > dist/finnish-business-ids.min.js"
   },
   "repository": {
     "type": "git",
